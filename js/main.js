@@ -1,5 +1,3 @@
-// routes.js should export your route definitions like this:
-// export default [{ path: '/', component: Home }, ...]
 import routes from './routes.js';
 
 // Global reactive store
@@ -20,7 +18,7 @@ const app = Vue.createApp({
 
 // Create router
 const router = VueRouter.createRouter({
-    history: VueRouter.createWebHashHistory(),
+    history: VueRouter.createWebHashHistory(), // hash mode is fine for GitHub Pages/Cloudflare Pages
     routes,
 });
 
